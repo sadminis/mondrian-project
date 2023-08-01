@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body {
+      height: 100vh;
+      
+    }
+
+    .flex-container {
+      height: 80%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      gap: 9px;
+      background: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+    }
+    
+    .red {
+      background-color: #e72f24;
+    }
+
+    .white {
+      background-color: #f0f1ec;
+    }
+
+    .blue {
+      background-color: #003492;
+      border-bottom: 10px solid black;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      text-align: center;
+      margin-top: 50px;
+      font-family: 'Dancing Script', cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="flex-container">
+    <div class="grid-container">
+      <div class="red"></div>
+      <div class="white" style="grid-column: span 3;"></div>
+      <div class="white" style="grid-row: span 2;"></div>
+      <div class="white" style="grid-row: span 2; grid-column: span 2;"></div>
+      <div class="blue"></div>
+      <div class="white" style="grid-row: span 2;"></div>
+      <div class="white"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+  </div>
+  <h1>
+    The Mondrian Painting
+  </h1>
+</body>
+
+</html>
